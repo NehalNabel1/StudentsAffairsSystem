@@ -41,9 +41,39 @@
     },
     {
       "id": 5,
-      "name": "Nour Ali",
-      "department": "Computer Science",
-      "email": "nehal@student.edu",
+      "name": "Nermeen Ahmed",
+      "department": "Nermeen Ahmed",
+      "email": "Nermeen Ahmed",
+      "courses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Nermeen Ahmed",
+      "department": "Nermeen Ahmed",
+      "email": "Nermeen Ahmed",
+      "courses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Nermeen Ahmed",
+      "department": "Nermeen Ahmed",
+      "email": "Nermeen Ahmed",
+      "courses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Nermeen Ahmed",
+      "department": "cs",
+      "email": "nehalnabel7777@gmail.com",
       "courses": [
         1,
         2

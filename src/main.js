@@ -3,22 +3,30 @@ import { AddStudents } from "./modules/add/AddStudents.js";
 
 let tbody = document.querySelector(".tbody");
 let tr = document.querySelector(".tr");
-let addBtn = document.querySelector(".addBtn");
-
+let addBtn = document.querySelector("#addStudentBtn");
+let saveContactBtn = document.querySelector("#saveContactBtn");
+let fullName = document.querySelector("#fullName");
+let department = document.querySelector("#department");
+let email = document.querySelector("#email");
+let crs1 = document.querySelector("#crs1");
+let crs2 = document.querySelector("#crs2");
 let newTr;
 
 let stdObj = new ViewStudents();
 let students = await stdObj.view();
 
 let addNewStudents = () => {
-  addBtn.addEventListener("click", async function (e) {
+  saveContactBtn.addEventListener("click", async function (e) {
     e.preventDefault();
 
     let newstd = new AddStudents();
+    console.log(department.value);
+    console.log(email.value);
+
     let newstudent = await newstd.add({
-      name: "Nour Ali",
-      department: "Computer Science",
-      email: "nehal@student.edu",
+      name: fullName.value,
+      department: department.value,
+      email: email.value,
       courses: [1, 2],
     });
     console.log(newstudent);
