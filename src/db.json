@@ -1,0 +1,63 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Omar Ali",
+      "department": "Computer Science",
+      "email": "omar@student.edu",
+      "courses": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Mona Adel",
+      "department": "Information Systems",
+      "email": "mona@student.edu",
+      "courses": [2]
+    }
+  ],
+
+  "courses": [
+    {
+      "id": 1,
+      "code": "CS201",
+      "name": "Data Structures",
+      "instructorId": 1
+    },
+    {
+      "id": 2,
+      "code": "CS202",
+      "name": "Database Systems",
+      "instructorId": 2
+    }
+  ],
+
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Dr. Mohamed Salah",
+      "department": "Computer Science",
+      "email": "msalah@university.edu"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Lina Fathy",
+      "department": "Information Systems",
+      "email": "lfathy@university.edu"
+    }
+  ],
+
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ahmed Hassan",
+      "role": "Student Affairs Staff",
+      "email": "ahmed@university.edu"
+    },
+    {
+      "id": 2,
+      "name": "Sara Mohamed",
+      "role": "Student Affairs Staff",
+      "email": "sara@university.edu"
+    }
+  ]
+}
