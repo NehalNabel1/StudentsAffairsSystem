@@ -38,6 +38,16 @@
         1,
         2
       ]
+    },
+    {
+      "id": 5,
+      "name": "Nour Ali",
+      "department": "Computer Science",
+      "email": "nehal@student.edu",
+      "courses": [
+        1,
+        2
+      ]
     }
   ],
   "courses": [
