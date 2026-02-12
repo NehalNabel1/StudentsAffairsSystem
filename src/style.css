@@ -1,0 +1,25 @@
+body {
+  background: #f8f9fa;
+  padding: 30px;
+}
+
+.table-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.btn-edit {
+  background: #6f42c1;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #59339d;
+  color: #fff;
+}
