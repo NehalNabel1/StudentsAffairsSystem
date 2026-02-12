@@ -11,7 +11,6 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" type="module"></script>
   </head>
   <body>
     <div class="container-fluid table-wrapper">
@@ -36,46 +35,19 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Courses</th>
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td>Airi Satou</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>33</td>
-            <td>2008-11-28</td>
-            <td>$162,700</td>
-            <td><button class="btn btn-sm btn-edit">Edit</button></td>
-            <td><button class="btn btn-sm btn-danger">Delete</button></td>
-          </tr>
+        <tbody class="tbody">
+          <tr class="tr d-none">
+            <td class="Name"></td>
+            <td class="Department"></td>
+            <td class="Email"></td>
+            <td class="Courses"></td>
 
-          <tr>
-            <td>Angelica Ramos</td>
-            <td>CEO</td>
-            <td>London</td>
-            <td>47</td>
-            <td>2009-10-09</td>
-            <td>$1,200,000</td>
-            <td><button class="btn btn-sm btn-edit">Edit</button></td>
-            <td><button class="btn btn-sm btn-danger">Delete</button></td>
-          </tr>
-
-          <tr>
-            <td>Ashton Cox</td>
-            <td>Junior Technical Author</td>
-            <td>San Francisco</td>
-            <td>66</td>
-            <td>2009-01-12</td>
-            <td>$86,000</td>
             <td><button class="btn btn-sm btn-edit">Edit</button></td>
             <td><button class="btn btn-sm btn-danger">Delete</button></td>
           </tr>
@@ -104,7 +76,10 @@
             </li>
           </ul>
         </nav>
+        <button class="addBtn btn btn-sm btn-success">Add</button>
       </div>
     </div>
+
+    <script src="./main.js" type="module"></script>
   </body>
 </html>

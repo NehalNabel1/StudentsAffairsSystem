@@ -1,5 +1,5 @@
 import { CRUD } from "../CRUD/CRUD.js";
-export class ViewStudent extends CRUD {
+export class ViewStudents extends CRUD {
   view = async () => {
     try {
       let res = await fetch("http://localhost:3000/students");
