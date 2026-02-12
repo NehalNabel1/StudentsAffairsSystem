@@ -7,7 +7,6 @@
     <!-- Bootstrap 5 -->
     <link href="./Bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" type="module"></script>
   </head>
   <body>
     <div class="container-fluid table-wrapper">
@@ -32,46 +31,19 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Courses</th>
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td>Airi Satou</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>33</td>
-            <td>2008-11-28</td>
-            <td>$162,700</td>
-            <td><button class="btn btn-sm btn-edit">Edit</button></td>
-            <td><button class="btn btn-sm btn-danger">Delete</button></td>
-          </tr>
+        <tbody class="tbody">
+          <tr class="tr d-none">
+            <td class="Name"></td>
+            <td class="Department"></td>
+            <td class="Email"></td>
+            <td class="Courses"></td>
 
-          <tr>
-            <td>Angelica Ramos</td>
-            <td>CEO</td>
-            <td>London</td>
-            <td>47</td>
-            <td>2009-10-09</td>
-            <td>$1,200,000</td>
-            <td><button class="btn btn-sm btn-edit">Edit</button></td>
-            <td><button class="btn btn-sm btn-danger">Delete</button></td>
-          </tr>
-
-          <tr>
-            <td>Ashton Cox</td>
-            <td>Junior Technical Author</td>
-            <td>San Francisco</td>
-            <td>66</td>
-            <td>2009-01-12</td>
-            <td>$86,000</td>
             <td><button class="btn btn-sm btn-edit">Edit</button></td>
             <td><button class="btn btn-sm btn-danger">Delete</button></td>
           </tr>
@@ -100,171 +72,10 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </div>
-    <button
-      class="btn btn-md btn-edit mt-2"
-      id="addStudentBtn"
-      data-bs-toggle="modal"
-      data-bs-target="#addStudentModal"
-      id="AddStudentBtn"
-    >
-      <i class="fas fa-plus"></i> Add student
-    </button>
-    <div
-      class="modal fade"
-      id="addStudentModal"
-      tabindex="-1"
-      aria-labelledby="addStudentModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="addStudentModalLabel">
-              Add New Student
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form id="studentForm">
-              <!-- Form Fields -->
-              <div class="form-group">
-                <label for="fullName"
-                  >Full Name <span class="required">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  oninput="validateInput(this)"
-                  placeholder="Enter full name"
-                  required
-                />
-                <div class="alert alert-danger d-none"></div>
-              </div>
-
-              <div class="form-group">
-                <label for="phoneNumber"
-                  >Phone Number <span class="required">*</span></label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phoneNumber"
-                  placeholder="e.g., 01012345678"
-                  required
-                />
-                <div class="alert alert-danger d-none"></div>
-              </div>
-
-              <div class="form-group">
-                <label for="emailAddress">Email Address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailAddress"
-                  placeholder="name@example.com"
-                />
-                <div class="alert alert-danger d-none"></div>
-              </div>
-
-              <div class="form-group">
-                <label for="address">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  placeholder="Enter address"
-                />
-                <div class="alert alert-danger d-none"></div>
-              </div>
-
-              <div class="form-group">
-                <label for="group">Group</label>
-                <select class="form-control" id="group">
-                  <option value="">Select a group</option>
-                  <option value="family">Family</option>
-                  <option value="friends">Friends</option>
-                  <option value="work">Work</option>
-                  <option value="school">School</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="notes">Notes</label>
-                <textarea
-                  class="form-control"
-                  id="notes"
-                  rows="3"
-                  placeholder="Add notes about this contact"
-                ></textarea>
-              </div>
-
-              <!-- Checkboxes -->
-              <div class="form-checkboxes">
-                <label for="Courses">Courses</label>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="isFavorite"
-                  />
-                  <div class="alert alert-danger d-none"></div>
-
-                  <label class="form-check-label" for="isFavorite">
-                    <i class="fas fa-star"></i> js
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="isEmergency"
-                  />
-                  <label class="form-check-label" for="isEmergency">
-                    <i class="fas fa-heartbeat"></i> Html
-                  </label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button
-              data-bs-dismiss="modal"
-              type="button"
-              class="btn btn-primary d-block"
-              id="saveContactBtn"
-            >
-              <i class="fas fa-check"></i> Save student
-            </button>
-            <button
-              data-bs-dismiss="modal"
-              type="button"
-              class="btn btn-warning d-none"
-              id="updateContactBtn"
-            >
-              <i class="fas fa-check"></i> update Student
-            </button>
-          </div>
-        </div>
+        <button class="addBtn btn btn-sm btn-success">Add</button>
       </div>
     </div>
 
-    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
