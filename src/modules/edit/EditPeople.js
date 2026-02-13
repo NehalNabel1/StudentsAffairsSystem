@@ -1,11 +1,11 @@
 import { CRUD } from "../CRUD/CRUD.js";
-export class editStudents extends CRUD {
-  edit = async (studentId, updateStudent) => {
+export class EditPeople extends CRUD {
+  edit = async (peopleId, updatepeople) => {
     try {
-      let res = await fetch(`http://localhost:3000/students/${studentId}`, {
+      let res = await fetch(`http://localhost:4000/people/${peopleId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(updateStudent),
+        body: JSON.stringify(updatepeople),
       });
       if (!res.ok) {
         throw new Error("Failed to update student");

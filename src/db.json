@@ -1,129 +1,140 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Omar Ali",
+      "name": "Nour Ahmed",
       "department": "Computer Science",
       "email": "omar@student.edu",
       "courses": [
-        1,
-        2
-      ]
+        "1",
+        "2"
+      ],
+      "id": "1"
     },
     {
-      "id": 2,
       "name": "Mona Adel",
       "department": "Information Systems",
       "email": "mona@student.edu",
       "courses": [
-        2
-      ]
+        "4"
+      ],
+      "id": "2"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Nehal Ali",
       "department": "Computer Science",
       "email": "nehal@student.edu",
       "courses": [
-        1,
-        2
+        "2",
+        "3"
       ]
     },
     {
-      "id": 4,
-      "name": "Nour Ali",
+      "name": "Omar Ahmed",
       "department": "Computer Science",
-      "email": "nehal@student.edu",
+      "email": "omar@student.edu",
       "courses": [
-        1,
-        2
-      ]
+        "1"
+      ],
+      "id": "4"
     },
     {
-      "id": 5,
-      "name": "Nermeen Ahmed",
-      "department": "Nermeen Ahmed",
-      "email": "Nermeen Ahmed",
+      "name": "Nada Amgad",
+      "department": "Computer Science",
+      "email": "omar@student.edu",
       "courses": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Nermeen Ahmed",
-      "department": "Nermeen Ahmed",
-      "email": "Nermeen Ahmed",
-      "courses": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Nermeen Ahmed",
-      "department": "Nermeen Ahmed",
-      "email": "Nermeen Ahmed",
-      "courses": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Nermeen Ahmed",
-      "department": "cs",
-      "email": "nehalnabel7777@gmail.com",
-      "courses": [
-        1,
-        2
-      ]
+        "3",
+        "4"
+      ],
+      "id": "5"
     }
   ],
   "courses": [
     {
-      "id": 1,
       "code": "CS201",
       "name": "Data Structures",
       "startDate": "2026-02-15",
-      "durationWeeks": 12,
-      "instructorId": 1
+      "durationWeeks": "9",
+      "instructorId": [
+        "2",
+        "5"
+      ],
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "code": "CS202",
-      "name": "Database Systems",
+      "name": "JS",
       "startDate": "2026-03-01",
-      "durationWeeks": 10,
-      "instructorId": 2
+      "durationWeeks": "10",
+      "instructorId": [
+        "2"
+      ]
+    },
+    {
+      "id": "3",
+      "code": "CS202",
+      "name": "HTML",
+      "startDate": "2026-04-01",
+      "durationWeeks": "6",
+      "instructorId": [
+        "5",
+        "1"
+      ]
+    },
+    {
+      "code": "CS203",
+      "name": "CSS",
+      "startDate": "2026-01-12",
+      "durationWeeks": "16",
+      "instructorId": [
+        "1"
+      ],
+      "id": "4"
     }
   ],
   "people": [
     {
-      "id": 1,
-      "name": "Dr. Mohamed Salah",
+      "name": "Dr. Mohamed Ahmed",
       "role": "Instructor",
       "department": "Computer Science",
-      "email": "msalah@university.edu"
+      "email": "msalah@university.edu",
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Dr. Lina Fathy",
       "role": "Instructor",
       "department": "Information Systems",
       "email": "lfathy@university.edu"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Ahmed Hassan",
       "role": "Student Affairs Staff",
+      "department": "Student Affairs",
       "email": "ahmed@university.edu"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Sara Mohamed",
       "role": "Student Affairs Staff",
+      "department": "Student Affairs",
       "email": "sara@university.edu"
+    },
+    {
+      "id": "5",
+      "name": "Dr. Rana Ahmed",
+      "role": "Instructor",
+      "department": "Computer Science",
+      "email": "rana@student.edu"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Ahmed Omar",
+      "role": "Instructor",
+      "department": "Computer Science",
+      "email": "salah@university.edu"
     }
   ]
 }
